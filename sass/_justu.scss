@@ -1,0 +1,148 @@
+.justu {
+  padding: 2.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // justify-content: center;
+
+  &__content {
+    // width: 100vw;
+    // padding: 0 1rem;
+    // padding-left: 4rem;
+    // padding-right: 4rem;
+
+    // flex-grow: 1;
+  }
+
+  &__text--box {
+    color: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media only screen and (max-width: $screen-420) {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__heading {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    @media only screen and (max-width: $screen-620) {
+      font-size: 5rem;
+    }
+    @media only screen and (max-width: $screen-420) {
+      margin-bottom: 0rem;
+    }
+  }
+  &__icon {
+    cursor: pointer;
+    margin: 0 5rem;
+
+    @media only screen and (max-width: $screen-620) {
+      visibility: hidden;
+    }
+    &--left {
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        transform: translateX(-0.3rem);
+      }
+    }
+    &--right {
+      transition: all 0.3s ease-out;
+      &:hover {
+        transform: translateX(0.3rem);
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: center;
+
+    color: black;
+
+    // width: 121.2rem;
+
+    & > *:not(:last-child) {
+      // margin-right: 5rem;
+    }
+    @media only screen and (max-width: $screen-620) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    @media only screen and (max-width: $screen-620) {
+      padding: 2rem 0;
+    }
+  }
+
+  &__offer {
+    position: relative;
+
+    transition: all 0.3s ease-out;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-0.4rem);
+    }
+  }
+  &__photo {
+    width: 27.2rem;
+    height: 38.5rem;
+
+    @media only screen and (max-width: $screen-620) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__offer--description {
+    font-size: 1.6rem;
+    font-weight: 300;
+    @media only screen and (max-width: $screen-620) {
+      font-size: 4rem;
+    }
+  }
+  &__offer-price {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 2rem;
+
+    &-less {
+      color: red;
+    }
+    &-full {
+      color: #cecece;
+    }
+    .ac-price {
+      color: #000000;
+      font-weight: 500;
+    }
+
+    @media only screen and (max-width: $screen-620) {
+      width: 40%;
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.discount {
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  background-color: #fbb03b;
+  padding: 0.5rem 1.1rem;
+  border-radius: 5rem;
+
+  @media only screen and (max-width: $screen-420) {
+    font-size: 2rem;
+  }
+}

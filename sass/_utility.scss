@@ -1,0 +1,37 @@
+.row_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mr-top-sm {
+  margin-top: 1rem;
+}
+.mr-top-md {
+  margin-top: 2rem;
+}
+.mr-top-lg {
+  margin-top: 5rem;
+}
+
+.mr-bottom-sm {
+  margin-bottom: 1rem;
+}
+.mr-bottom-md {
+  margin-bottom: 2rem;
+}
+.mr-bottom-lg {
+  margin-bottom: 3rem;
+}
+
+.font-bold {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.hidden__element {
+  display: none;
+}
+
+.show__element {
+  display: block;
+}
