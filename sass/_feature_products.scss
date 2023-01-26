@@ -251,6 +251,11 @@
       left: 5.5rem;
     }
   }
+
+  @media only screen and (max-width: $screen-420) {
+    width: 90%;
+    height: 85%;
+  }
 }
 
 .feature:hover {

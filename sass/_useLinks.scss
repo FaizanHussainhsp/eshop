@@ -19,6 +19,11 @@
     align-content: flex-start;
     font-weight: 500;
 
+    // & > * {
+    //   background-color: red;
+    //   width: 50%;
+    // }
+
     & > *:not(:first-child) {
       list-style: none;
     }

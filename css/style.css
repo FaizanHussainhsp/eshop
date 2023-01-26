@@ -849,6 +849,10 @@ body {
     @media only screen and (max-width: 38.75em) {
       .feature .discount {
         left: 5.5rem; } }
+  @media only screen and (max-width: 26.25em) {
+    .feature {
+      width: 90%;
+      height: 85%; } }
 
 .feature:hover {
   transform: translateY(-0.4rem); }
