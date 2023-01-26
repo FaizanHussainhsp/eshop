@@ -5,48 +5,101 @@
   color: #000000;
   font-family: "Poppins";
 
+  // @media only screen and (max-width: $screen-1366) {
+  //   font-size: 3.5rem;
+  // }
+
   &__heading-box {
     display: flex;
     justify-content: center;
     .heading2 {
       font-weight: 500;
-      font-size: 3rem;
-      @media only screen and (max-width: $screen-420) {
-        font-size: 5rem;
-      }
+      // font-size: 3rem;
+      // @media only screen and (max-width: $screen-420) {
+      //   font-size: 5rem;
+      // }
     }
   }
   &__feature--container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10rem 0;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
+    @media only screen and (max-width: $screen-620) {
+      flex-direction: column;
+      align-items: center;
+      & > *:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   &__feature {
     width: 26.2rem;
     text-align: center;
-    @media only screen and (max-width: $screen-420) {
-    }
+    // @media only screen and (max-width: $screen-1366) {
+    //   width: 30rem;
+    // }
+    // @media only screen and (max-width: $screen-420) {
+    // }
   }
   &__icon {
     width: 10.9rem;
     height: 8.7rem;
     margin-left: 3rem;
+
+    @media only screen and (max-width: $screen-1366) {
+      width: 11rem;
+      height: 9rem;
+    }
+    @media only screen and (max-width: $screen-620) {
+      width: 12rem;
+      height: 10rem;
+    }
+    // @media only screen and (max-width: $screen-1366) {
+    //   height: 20rem;
+    //   width: 15rem;
+    // }
   }
   &__description {
     font-size: 1.3rem;
     color: #808080;
-    @media only screen and (max-width: $screen-420) {
-      font-size: 2rem;
+
+    @media only screen and (max-width: $screen-1440) {
+      font-size: 1.4rem;
     }
+
+    @media only screen and (max-width: $screen-1366) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (max-width: $screen-620) {
+      font-size: 1.9rem;
+    }
+    // @media only screen and (max-width:$screen-)
+
+    // @media only screen and (max-width: $screen-1366) {
+    //   font-size: 2.2rem;
+    // }
+    // @media only screen and (max-width: $screen-420) {
+    //   font-size: 2rem;
+    // }
   }
 }
 
 .heading3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
-  @media only screen and (max-width: $screen-420) {
+  // @media only screen and (max-width: $screen-1366) {
+  //   font-size: 2.4rem;
+  //   font-weight: 800;
+  // }
+  // @media only screen and (max-width: $screen-420) {
+  //   font-size: 2.5rem;
+  // }
+
+  @media only screen and (max-width: $screen-620) {
     font-size: 2.5rem;
   }
 }

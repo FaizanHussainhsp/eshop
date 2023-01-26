@@ -1,38 +1,121 @@
 .feature_products {
   // background-color: purple;
-  padding: 2.5rem 0;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   &--heading-box {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     color: #000000;
-    font-size: 3rem;
+    // font-size: 3rem;
     // background-color: PINK;
     // padding: 2rem 12.5rem;
+
     .heading2 {
       // padding-top: 4rem;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 3rem;
-      @media only screen and (max-width: $screen-420) {
-        font-size: 5rem;
+
+      @media only screen and (max-width: $screen-1366) {
+        font-size: 3.5rem;
       }
+      @media only screen and (max-width: $screen-620) {
+        font-size: 3.8rem;
+        padding-top: 2rem;
+      }
+      // @media only screen and (max-width: $screen-1366) {
+      //   font-size: 5rem;
+      // }
+      // @media only screen and (max-width: $screen-420) {
+      //   font-size: 5rem;
+      // }
     }
     // margin-bottom: 4rem;
   }
 
   &--gallery {
     display: flex;
-    justify-content: space-evenly;
+
     // justify-content: space-evenly;
     // align-items: center;
     flex-wrap: wrap;
     // padding: 5rem 30rem;
-    // background-color: red;
-    margin-top: 1rem;
+    justify-content: space-evenly;
 
-    @media only screen and (max-width: $screen-420) {
+    margin-top: 4rem;
+
+    & > * {
+      padding: 0 3rem;
+      width: 27.2rem;
+    }
+
+    @media only screen and (max-width: $screen-1366) {
+      & > * {
+        padding: 0 2rem;
+      }
+    }
+
+    @media only screen and (max-width: $screen-1228) {
+      & > * {
+        padding: 0rem;
+        // padding: 0 0rem;
+        // justify-content: space-between;
+        // padding: 0;
+        // width: 30%;
+        // height: 30%;
+        // width: 20%;
+
+        // padding: 0 5rem;
+        // flex-wrap: nowrap;
+      }
+    }
+
+    @media only screen and (max-width: $screen-1108) {
+      // justify-content: space-between;
+    }
+    // @media only screen and (max-width: $screen-620) {
+    //   flex-direction: column;
+    //   align-items: center;
+
+    //   margin-top: 5rem;
+
+    //   & > * {
+    //     margin-bottom: 5rem;
+    //   }
+    // }
+    // @media only screen and (max-width: $screen-420) {
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
+
+    @media only screen and (max-width: $screen-1070) {
+      & > * {
+        padding-left: 10rem;
+        flex-grow: 1;
+        margin-right: 0rem;
+        justify-content: center;
+        align-items: center;
+      }
+      // & > *:not(:last-child) {
+
+      // }
+    }
+
+    @media only screen and (max-width: $screen-620) {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+
+      & > * {
+        padding-left: 0rem;
+        flex-grow: 0;
+        width: 50%;
+        margin-top: 5rem;
+      }
+
+      // & > * {
+      //   width: 90%;
+      // }
     }
   }
 
@@ -47,13 +130,43 @@
   transition: all 0.3s;
   cursor: pointer;
 
+  @media only screen and (max-width: $screen-1228) {
+    margin-right: 10rem;
+  }
+  @media only screen and (max-width: $screen-1108) {
+    margin-right: 10rem;
+  }
+
+  @media only screen and (max-width: $screen-1070) {
+    margin-right: -2rem;
+  }
+
   &-img {
-    @media only screen and (max-width: $screen-1440) {
-      width: 27.2rem;
-      height: 38.5rem;
+    // @media only screen and (max-width: $screen-1440) {
+    //   width: 27.2rem;
+    //   height: 38.5rem;
+    // }
+    // @media only screen and (max-width: $screen-620) {
+    //   width: 100%;
+    //   height: 100%;
+    // }
+    // @media only screen and (max-width: $screen-420) {
+    //   width: 100%;
+    //   height: 100%;
+    // }
+
+    @media only screen and (max-width: $screen-1228) {
+      // width: 100%;
+    }
+    @media only screen and (max-width: $screen-1108) {
+      // width: 80%;
+    }
+    @media only screen and (max-width: $screen-1070) {
+      width: 100%;
+      height: 80%;
     }
 
-    @media only screen and (max-width: $screen-420) {
+    @media only screen and (max-width: $screen-620) {
       width: 100%;
       height: 100%;
     }
@@ -65,8 +178,21 @@
     font-size: 1.6rem;
     font-weight: 300;
     padding-top: 1.5rem;
-    @media only screen and (max-width: $screen-420) {
-      font-size: 3rem;
+    @media only screen and (max-width: $screen-1366) {
+      font-size: 1.8rem;
+    }
+    // @media only screen and (max-width: $screen-1366) {
+    //   font-size: 3rem;
+    // }
+    // @media only screen and (max-width: $screen-420) {
+    //   font-size: 3rem;
+    // }
+
+    @media only screen and (max-width: $screen-680) {
+      font-size: 2.3rem;
+    }
+    @media only screen and (max-width: $screen-620) {
+      font-size: 2.7rem;
     }
   }
   &-price {
@@ -77,17 +203,53 @@
     &-full {
       color: #000000;
     }
+    &-cp-price {
+      color: #cecece !important;
+    }
     &-less {
       color: red;
     }
-    @media only screen and (max-width: $screen-420) {
-      font-size: 3rem;
+
+    @media only screen and (max-width: $screen-1366) {
+      font-size: 2.1rem;
+      width: 70%;
     }
+
+    @media only screen and (max-width: $screen-1070) {
+      width: 45%;
+    }
+    @media only screen and (max-width: $screen-680) {
+      font-size: 2.4rem;
+      width: 65%;
+    }
+    @media only screen and (max-width: $screen-620) {
+      font-size: 2.7rem;
+      width: 45%;
+    }
+    // @media only screen and (max-width: $screen-1366) {
+    //   width: 80%;
+    //   font-size: 3rem;
+    // }
+    // @media only screen and (max-width: $screen-620) {
+    //   width: 40%;
+    //   font-size: 3rem;
+    // }
+    // @media only screen and (max-width: $screen-420) {
+    //   font-size: 3rem;
+    // }
   }
 
   .discount {
     position: absolute;
     top: 3rem;
+    left: 6rem;
+
+    @media only screen and (max-width: $screen-1070) {
+      left: 12.5rem;
+    }
+    @media only screen and (max-width: $screen-620) {
+      left: 5.5rem;
+    }
   }
 }
 

@@ -7,13 +7,20 @@
 }
 ////////////////////////////////////////////
 /// break points
+$screen-1550: 96.875em; ////////resolution 1550
 $screen-1520: 95em; ////////////resolution 1520
 $screen-1440: 90em; ///////////resolution 1440
+$screen-1390: 86.875em; /////////resolution 1390
 $screen-1366: 85.375em; //////////resolution 1366
 $screen-1280: 80em; //////////resolution 1280
+$screen-1228: 76.75em; /////////resolution 1228
 $screen-1215: 75.9375em; /////////resolution 1215
+$screen-1108: 69.25em; ///////////resolution 1108
 $screen-1070: 66.875em; /////////resolution 1070
+$screen-851: 53.1875em; ///////////resolution 852
+$screen-790: 49.375em; ///////////resolution 790
 $screen-786: 49.125em; ////////resolution 786
+$screen-680: 42.5em; ///////////resolution 680
 $screen-620: 38.75em; ////////resolution 620
 $screen-420: 26.25em; //////////resolution 420
 
@@ -27,6 +34,9 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 62.5%; //10 px
+  @media only screen and (max-width: $screen-1550) {
+    font-size: 56.25%; //9px
+  }
   @media only screen and (max-width: $screen-1520) {
     font-size: 56.25%; //9px
   }
@@ -42,9 +52,9 @@ html {
   @media only screen and (max-width: $screen-1070) {
     font-size: 31.25%; //5px
   }
-  @media only screen and (max-width: $screen-786) {
-    font-size: 25%; //5px
-  }
+  // @media only screen and (max-width: $screen-786) {
+  //   font-size: 25%; //5px
+  // }
 }
 
 body {

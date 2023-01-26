@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   // justify-content: center;
 
   &__content {
@@ -18,30 +19,55 @@
     color: var(--black-color);
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
+
+    // @media only screen and (max-width: $screen-420) {
+    //   align-items: center;
+    //   justify-content: space-between;
+    // }
+
+    @media only screen and (max-width: $screen-620) {
+      margin-top: 2rem;
+    }
     @media only screen and (max-width: $screen-420) {
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
     }
   }
   &__heading {
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 5rem;
+
+    @media only screen and (max-width: $screen-1366) {
+      font-size: 3.5rem;
+    }
     @media only screen and (max-width: $screen-620) {
-      font-size: 5rem;
+      font-size: 4rem;
     }
-    @media only screen and (max-width: $screen-420) {
-      margin-bottom: 0rem;
-    }
+
+    // @media only screen and (max-width: $screen-1366) {
+    //   font-size: 4rem;
+    // }
+
+    // @media only screen and (max-width: $screen-620) {
+    //   font-size: 5rem;
+    // }
+    // @media only screen and (max-width: $screen-420) {
+    //   margin-bottom: 0rem;
+    // }
   }
   &__icon {
     cursor: pointer;
     margin: 0 5rem;
 
-    @media only screen and (max-width: $screen-620) {
-      visibility: hidden;
-    }
+    // @media only screen and (max-width: $screen-1366) {
+    //   height: 4rem;
+    //   width: 5rem;
+    // }
+
+    // @media only screen and (max-width: $screen-620) {
+    //   visibility: hidden;
+    // }
     &--left {
       transition: all 0.3s ease-out;
 
@@ -55,12 +81,22 @@
         transform: translateX(0.3rem);
       }
     }
+
+    @media only screen and (max-width: $screen-790) {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    @media only screen and (max-width: $screen-680) {
+      visibility: hidden;
+    }
   }
 
   &__gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     // align-items: center;
 
     color: black;
@@ -70,13 +106,39 @@
     & > *:not(:last-child) {
       // margin-right: 5rem;
     }
-    @media only screen and (max-width: $screen-620) {
+    // @media only screen and (max-width: $screen-620) {
+    //   flex-direction: column;
+    //   align-items: center;
+    //   width: 100%;
+
+    //   & > * {
+    //     margin-bottom: 4rem;
+    //   }
+    // }
+    // @media only screen and (max-width: $screen-620) {
+    //   padding: 2rem 0;
+
+    //   margin-top: 4rem;
+    // }
+
+    @media only screen and (max-width: $screen-790) {
+      // flex-wrap: nowrap;
+      // & > * {
+      //   margin: 0 1.5rem;
+      // }
+    }
+
+    @media only screen and (max-width: $screen-680) {
       flex-direction: column;
       align-items: center;
-      width: 100%;
+
+      & > * {
+        margin-bottom: 5rem;
+      }
     }
+
     @media only screen and (max-width: $screen-620) {
-      padding: 2rem 0;
+      margin-top: 5rem;
     }
   }
 
@@ -95,17 +157,47 @@
     width: 27.2rem;
     height: 38.5rem;
 
-    @media only screen and (max-width: $screen-620) {
+    @media only screen and (max-width: $screen-1366) {
+      width: 29.2rem;
+      height: 40.5rem;
+    }
+
+    @media only screen and (max-width: $screen-790) {
+      width: 26.2rem;
+      height: 35.5rem;
+    }
+
+    @media only screen and (max-width: $screen-680) {
       width: 100%;
       height: 100%;
     }
+
+    // @media only screen and (max-width: $screen-620) {
+    //   width: 100%;
+    //   height: 100%;
+    // }
   }
 
   &__offer--description {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $screen-1366) {
+      font-size: 2rem;
+    }
+
+    // @media only screen and (max-width: $screen-1366) {
+    //   font-size: 2.5rem;
+    // }
+    // @media only screen and (max-width: $screen-620) {
+    //   font-size: 4rem;
+    // }
+
+    @media only screen and (max-width: $screen-680) {
+      font-size: 2.3rem;
+    }
     @media only screen and (max-width: $screen-620) {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
   }
   &__offer-price {
@@ -120,20 +212,32 @@
     &-full {
       color: #cecece;
     }
-    .ac-price {
-      color: #000000;
-      font-weight: 500;
+    &-cp__color {
+    }
+    // @media only screen and (max-width: $screen-1366) {
+    //   width: 80%;
+    //   font-size: 3rem;
+    // }
+    // @media only screen and (max-width: $screen-620) {
+    //   width: 40%;
+    //   font-size: 3.5rem;
+    // }
+    @media only screen and (max-width: $screen-1366) {
+      font-size: 2.2rem;
     }
 
-    @media only screen and (max-width: $screen-620) {
+    @media only screen and (max-width: $screen-680) {
+      font-size: 2.4rem;
       width: 40%;
-      font-size: 3.5rem;
+    }
+    @media only screen and (max-width: $screen-620) {
+      font-size: 2.6rem;
     }
   }
 }
 
 .discount {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   position: absolute;
   top: 2rem;
@@ -142,7 +246,25 @@
   padding: 0.5rem 1.1rem;
   border-radius: 5rem;
 
-  @media only screen and (max-width: $screen-420) {
-    font-size: 2rem;
+  @media only screen and (max-width: $screen-1366) {
+    font-size: 1.7rem;
   }
+
+  @media only screen and (max-width: $screen-680) {
+    font-size: 1.9rem;
+  }
+
+  // @media only screen and (max-width: $screen-1366) {
+  //   font-size: 2.5rem;
+  //   left: 1.8rem;
+  // }
+
+  // @media only screen and (max-width: $screen-420) {
+  //   font-size: 2rem;
+  // }
+}
+
+.ac-price {
+  color: #000000;
+  font-weight: 500;
 }
