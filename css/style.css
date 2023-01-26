@@ -178,6 +178,9 @@ body {
           border-radius: 50px; } }
     .header-focus .linebox__line-end {
       padding-top: 1rem; }
+    @media only screen and (max-width: 93.125em) {
+      .header-focus .linebox {
+        height: 45rem; } }
     @media only screen and (max-width: 90em) {
       .header-focus .linebox {
         height: 45rem; } }
